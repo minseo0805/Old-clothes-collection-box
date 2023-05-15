@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#CFD6C0">
+
+        <Button
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/home"
+            android:id="@+id/btnHome"
+            android:layout_gravity="left|center_vertical"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="온라인 의류수거함"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/login"
+            android:id="@+id/btnMenu"
+            android:layout_gravity="left|center_vertical"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/border"
+                android:layout_margin="5dp"
+                android:gravity="center">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/post"
+                    android:id="@+id/btnPost"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:layout_weight="1"
+                    android:src="@drawable/shirt" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="파란색 셔츠\n\n 대충 이 옷 사이즈같은 정보랑 거의 새 것 같아서 굉장히 추천 한다는 설명"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#00FF0000"
+                    android:id="@+id/btnPic1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:layout_weight="1"
+                    android:src="@drawable/pants"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="크림 반바지\n\n 대충 바지 산지 얼마 안 되었지만 안타까운 사정으로 나눔 한다는 글"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#00FF0000"
+                    android:id="@+id/btnPic2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:layout_weight="1"
+                    android:src="@drawable/shoes"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="슬리퍼\n\n깨끗하게 신었는데 가져갈사람 없나 냄새안나요 진짜루 대충 사이즈 몇이에요"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#00FF0000"
+                    android:id="@+id/btnPic3"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:layout_weight="1"
+                    android:src="@drawable/hat"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="빨간 모자\n\n이거 진짜 새건데 정말 새건데 진짜 좋은건데 가져갈사람 없나"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#00FF0000"
+                    android:id="@+id/btnPic4"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
